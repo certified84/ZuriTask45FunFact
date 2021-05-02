@@ -24,4 +24,6 @@
     <string name="swift_fact">Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. and the open-source community, first released in 2014.</string>
     <string name="java_script_fact">JavaScript, a programming language designed by NetScape in 1995, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</string>
     <string name="language_logo">Language logo</string>
+    <string name="all_fields_are_required">All fields are required</string>
+    <string name="check_back_in_a_bit">Check back in a bit</string>
 </resources>

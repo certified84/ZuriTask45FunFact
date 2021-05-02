@@ -1,5 +1,6 @@
 package com.certified.zuritask45
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -12,6 +13,7 @@ import com.certified.zuritask45.databinding.FactItemBinding
 
 class FactAdapter(context: Context, facts: List<FactModel>) :
     ArrayAdapter<FactModel>(context, 0, facts) {
+    @SuppressLint("ViewHolder")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
 
         val binding = FactItemBinding.inflate(LayoutInflater.from(context), parent, false)
@@ -27,13 +29,13 @@ class FactAdapter(context: Context, facts: List<FactModel>) :
             tvName.text = fact?.name
         }
 
-//        view.setOnClickListener {
-//            val intent = Intent(context, DetailActivity::class.java)
-//            intent.putExtra(IntentExtras.LANGUAGE_NAME, fact?.name)
-//            intent.putExtra(IntentExtras.LANGUAGE_LOGO, fact?.logo)
-//            intent.putExtra(IntentExtras.LANGUAGE_FACT, fact?.fact)
-//            parent.context.startActivity(intent)
-//        }
+        view.setOnClickListener {
+            val intent = Intent(context, DetailActivity::class.java)
+            intent.putExtra(IntentExtras.LANGUAGE_NAME, fact?.name)
+            intent.putExtra(IntentExtras.LANGUAGE_LOGO, fact?.logo)
+            intent.putExtra(IntentExtras.LANGUAGE_FACT, fact?.fact)
+            parent.context.startActivity(intent)
+        }
 
         return view
     }
