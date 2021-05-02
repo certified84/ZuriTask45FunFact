@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ZuriTask45</string>
+    <string name="hi_there">Hi there,</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="log_in">Log in</string>
+    <string name="your_account_to_continue">Your account to continue</string>
+    <string name="or_log_in_with_email">or Log In with email</string>
+    <string name="your_email_address">Your Email address</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login_with_facebook">Login with facebook</string>
+    <string name="login_with_google">Login with google</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="kotlin_fact">Kotlin, a language designed by JetBrains in 2010 is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin\'s standard library depends on the Java Class Library, but type inference allows its syntax to be more concise.</string>
+    <string name="java">Java</string>
+    <string name="java_fact">Java, a language designed by James Gosling is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible</string>
+    <string name="python">Python</string>
+    <string name="python_fact">Python, a language designed by Guido van Rossum is an interpreted high-level general-purpose programming language. Python\'s design philosophy emphasizes code readability with its notable use of significant indentation.</string>
+    <string name="java_script">JavaScript</string>
+    <string name="swift">Swift</string>
+    <string name="swift_fact">Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. and the open-source community, first released in 2014.</string>
+    <string name="java_script_fact">JavaScript, a programming language designed by NetScape in 1995, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</string>
+    <string name="language_logo">Language logo</string>
+</resources>
