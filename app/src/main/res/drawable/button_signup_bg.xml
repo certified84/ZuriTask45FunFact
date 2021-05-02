@@ -5,6 +5,4 @@
     <size android:width="184dp" />
     <size android:height="41dp" />
 
-    <!--    <padding android:left="25dp"/>-->
-
 </shape>

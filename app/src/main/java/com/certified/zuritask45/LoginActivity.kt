@@ -2,6 +2,8 @@ package com.certified.zuritask45
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +12,11 @@ import com.certified.zuritask45.databinding.ActivityLoginBinding
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
     var binding: ActivityLoginBinding? = null
+
+    companion object {
+        const val email = "achiagasamson5@gmail.com"
+        const val password = "99.9%Pass"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,15 +52,32 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
                 btnLogin -> {
                     if (etEmail.text.toString().trim() != "" &&
-                        etPassword.text.toString().trim() != "" ) {
-                        startActivity(Intent(this@LoginActivity, MainActivity::class.java))
-                        finish()
-                    } else
+                        etPassword.text.toString().trim() != ""
+                    ) {
+                        if (etEmail.text.toString().trim() == email &&
+                            etPassword.text.toString().trim() == password
+                        ) {
+                            etPasswordLayout.error = null
+                            etEmailLayout.error = null
+                            progressBar.visibility = View.VISIBLE
+                            val handler = Handler(Looper.myLooper()!!)
+                            handler.postDelayed({
+                                startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+                                finish()
+                            }, 3000L)
+                        } else {
+                            etPasswordLayout.error = getString(R.string.error)
+                            etEmailLayout.error = getString(R.string.error)
                         Toast.makeText(
                             this@LoginActivity,
-                    getString(R.string.all_fields_are_required),
-                    Toast.LENGTH_LONG
-                    ).show()
+                            getString(R.string.wrong_email_or_password),
+                            Toast.LENGTH_LONG
+                        ).show()
+                        }
+                    } else {
+                        etPasswordLayout.error = getString(R.string.required)
+                        etEmailLayout.error = getString(R.string.required)
+                    }
                 }
             }
         }

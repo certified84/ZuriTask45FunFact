@@ -2,7 +2,7 @@ package com.certified.zuritask45
 
 import android.content.Context
 
-class DummyData(private val context: Context) {
+data class DummyData(private val context: Context) {
 
     fun getFacts(): List<FactModel> = listOf(
         FactModel(

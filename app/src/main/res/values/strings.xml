@@ -1,18 +1,12 @@
 <resources>
-    <string name="app_name">ZuriTask45</string>
+    <string name="app_name">ZuriTask45 FunFact</string>
     <string name="hi_there">Hi there,</string>
     <string name="welcome_back">Welcome back</string>
     <string name="log_in">Log in</string>
     <string name="your_account_to_continue">Your account to continue</string>
-    <string name="or_log_in_with_email">or Log In with email</string>
-    <string name="your_email_address">Your Email address</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
     <string name="sign_up">Sign Up</string>
     <string name="forgot_password">Forgot Password?</string>
-    <string name="login_with_facebook">Login with facebook</string>
-    <string name="login_with_google">Login with google</string>
-    <string name="enter_password">Enter Password</string>
-    <string name="enter_email">Enter Email</string>
     <string name="kotlin">Kotlin</string>
     <string name="kotlin_fact">Kotlin, a language designed by JetBrains in 2010 is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin\'s standard library depends on the Java Class Library, but type inference allows its syntax to be more concise.</string>
     <string name="java">Java</string>
@@ -26,4 +20,9 @@
     <string name="language_logo">Language logo</string>
     <string name="all_fields_are_required">All fields are required</string>
     <string name="check_back_in_a_bit">Check back in a bit</string>
+    <string name="email">Email*</string>
+    <string name="password">Password*</string>
+    <string name="required">*Required</string>
+    <string name="error">Error</string>
+    <string name="wrong_email_or_password">Wrong email or password</string>
 </resources>
